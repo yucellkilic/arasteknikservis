@@ -26,49 +26,49 @@ export function Home() {
       id: "sofben",
       icon: Flame,
       title: "Şofben Servisi",
-      description: "Şofben tamir, bakım ve montaj hizmetleri",
+      description: "Tamir, bakım ve montaj.",
       gradient: "from-orange-500 to-red-500",
     },
     {
       id: "kombi",
       icon: Flame,
       title: "Kombi Servisi",
-      description: "Tüm markalarda kombi bakım ve onarım",
+      description: "Kapsamlı bakım ve onarım.",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
       id: "tamir-bakim",
       icon: Wrench,
       title: "Tamir & Bakım",
-      description: "Profesyonel tamir ve periyodik bakım",
+      description: "Profesyonel ve düzenli bakım.",
       gradient: "from-purple-500 to-pink-500",
     },
     {
       id: "alim-satim",
       icon: ShoppingCart,
       title: "Alım Satım",
-      description: "2. el cihaz alım satım hizmetleri",
+      description: "2. el alım ve satım.",
       gradient: "from-green-500 to-emerald-500",
     },
     {
       id: "yedek-parca",
       icon: ShoppingCart,
       title: "Yedek Parça",
-      description: "Orijinal ve uygun fiyatlı yedek parçalar",
+      description: "Orijinal yedek parça temini.",
       gradient: "from-yellow-500 to-orange-500",
     },
     {
       id: "klima",
       icon: Wind,
       title: "Klima Servisi",
-      description: "Klima montaj, bakım ve gaz dolumu",
+      description: "Montaj, bakım ve gaz dolumu.",
       gradient: "from-cyan-500 to-blue-500",
     },
     {
       id: "beyaz-esya",
       icon: WashingMachine,
       title: "Beyaz Eşya",
-      description: "Bulaşık, çamaşır makinesi servisi",
+      description: "Tüm beyaz eşya servis hizmetleri.",
       gradient: "from-indigo-500 to-purple-500",
     },
   ];
@@ -109,7 +109,6 @@ export function Home() {
     "Aziziye",
     "Dadaşkent",
     "Lalapaşa",
-    "Osmangazi",
     "Gez Mahallesi",
     "Kazımkarabekir",
   ];
@@ -134,7 +133,7 @@ export function Home() {
   ];
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden" translate="no">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#F8F9FA] via-white to-[#F8F9FA]">
         {/* Animated Background Elements */}
@@ -330,7 +329,7 @@ export function Home() {
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
 
-                <h3 className="text-xl font-bold text-[#1A1A2E] mb-2 group-hover:text-[#0066FF] transition-colors">
+                <h3 className="text-xl font-bold text-[#1A1A2E] mb-2 group-hover:text-[#0066FF] transition-colors" translate="no">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">

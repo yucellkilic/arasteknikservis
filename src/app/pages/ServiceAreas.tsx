@@ -13,7 +13,6 @@ export function ServiceAreas() {
         "Yunusemre",
         "Lalapaşa",
         "Cumhuriyet",
-        "Osmangazi",
       ],
     },
     {
@@ -21,10 +20,8 @@ export function ServiceAreas() {
       neighborhoods: [
         "Yenişehir",
         "Hilalkent",
-        "Karaçoban",
         "Yoncalık",
         "Kayakyolu",
-        "Malmeydanı",
       ],
     },
     {

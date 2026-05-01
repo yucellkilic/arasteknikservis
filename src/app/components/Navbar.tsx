@@ -30,7 +30,7 @@ export function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+      className={`fixed top-[36px] left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
           ? "bg-white/90 backdrop-blur-lg shadow-lg"
           : "bg-transparent"
@@ -39,14 +39,16 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center group">
-            <span className="font-extrabold text-2xl sm:text-3xl tracking-tight text-[#0066FF] group-hover:text-[#00D9C0] transition-colors duration-300">
-              Aras Teknik Servis
-            </span>
+          <Link to="/" className="flex items-center group" translate="no">
+            <img
+              src="/assets/images/logo.png"
+              alt="Aras Teknik Servis"
+              className="h-16 w-auto sm:h-[72px] object-contain py-1"
+            />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8" translate="no">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -105,7 +107,7 @@ export function Navbar() {
           exit={{ opacity: 0, height: 0 }}
           className="lg:hidden bg-white border-t border-gray-200"
         >
-          <div className="px-4 py-6 space-y-4">
+          <div className="px-4 py-6 space-y-4" translate="no">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
