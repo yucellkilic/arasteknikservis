@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { ChevronDown, HelpCircle, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
+import { SEO } from "../components/SEO";
 
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -85,7 +86,12 @@ export function FAQ() {
   ];
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-[#F8F9FA] min-h-screen">
+      <SEO 
+        title="Sıkça Sorulan Sorular (SSS) - Aras Teknik Servis"
+        description="Kombi basıncı neden düşer? Klima bakımı ne zaman yapılmalı? Servis ücretleriniz ne kadar? Tüm teknik servis sorularınızın yanıtları."
+        canonicalUrl="/sss"
+      />
       {/* Hero */}
       <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#0066FF] via-[#00D9C0] to-[#FF6B35] overflow-hidden">
         <div className="absolute inset-0">

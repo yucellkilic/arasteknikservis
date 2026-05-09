@@ -1,10 +1,12 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
 import { Home, ArrowLeft } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 export function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#F8F9FA] to-white relative overflow-hidden">
+      <SEO title="404 Sayfa Bulunamadı - Aras Teknik Servis" description="Aradığınız sayfa bulunamadı." />
       <div className="absolute inset-0">
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}

@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { Calendar, User, ArrowLeft, ArrowRight } from "lucide-react";
 import { blogPosts } from "../../data/blogData";
 import { useEffect } from "react";
+import { SEO } from "../components/SEO";
 
 export function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
@@ -22,6 +23,7 @@ export function BlogPost() {
   if (!post) {
     return (
       <div className="min-h-[70vh] flex flex-col items-center justify-center text-center px-4">
+        <SEO title="Yazı Bulunamadı - Aras Teknik Servis" description="Aradığınız blog yazısı bulunamadı." />
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Yazı Bulunamadı</h1>
         <p className="text-gray-600 mb-8">Aradığınız blog yazısı silinmiş veya taşınmış olabilir.</p>
         <button
@@ -36,6 +38,11 @@ export function BlogPost() {
 
   return (
     <div className="overflow-hidden bg-[#F8F9FA] min-h-screen">
+      <SEO 
+        title={`${post.title} - Aras Teknik Servis Blog`}
+        description={post.excerpt}
+        canonicalUrl={`/blog/${post.slug}`}
+      />
       {/* Hero Header */}
       <section className="relative h-[400px] sm:h-[500px] lg:h-[600px] w-full">
         <img

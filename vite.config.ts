@@ -3,7 +3,6 @@ import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
-
 function figmaAssetResolver() {
   return {
     name: 'figma-asset-resolver',
@@ -19,42 +18,40 @@ function figmaAssetResolver() {
 export default defineConfig({
   plugins: [
     figmaAssetResolver(),
-    // The React and Tailwind plugins are both required for Make, even if
-    // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
   ],
   resolve: {
     alias: {
-      // Alias @ to the src directory
       '@': path.resolve(__dirname, './src'),
     },
   },
-
-  // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
-
   build: {
-    // Optimize chunk splitting for better caching
     rollupOptions: {
       output: {
         manualChunks: {
-          // Separate vendor chunks for better caching
-          'react-vendor': ['react', 'react-dom'],
+          'react-vendor': ['react', 'react-dom', 'react-helmet-async'],
           'router': ['react-router'],
           'motion': ['motion'],
         },
       },
     },
-    // Reduce chunk size warnings threshold
     chunkSizeWarningLimit: 200,
-    // CSS code splitting
     cssCodeSplit: true,
-    // Source maps off for production (smaller deploy)
     sourcemap: false,
-    // Minification
-    minify: 'esbuild',
-    // Target modern browsers for smaller output
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+        pure_funcs: ['console.log', 'console.info', 'console.debug', 'console.warn'],
+        passes: 2,
+      },
+      format: {
+        comments: false,
+      },
+    },
     target: 'es2020',
   },
 })

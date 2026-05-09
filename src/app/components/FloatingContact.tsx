@@ -15,7 +15,8 @@ export function FloatingContact() {
       icon: MessageCircle,
       label: "WhatsApp",
       href: "https://wa.me/905304729010",
-      color: "bg-[#128C7E] hover:bg-[#075E54]",
+      color: "bg-[#075E54] hover:bg-[#054c44]", // WCAG compliant dark green
+      ariaLabel: "WhatsApp üzerinden teknik destek alın",
     },
     {
       icon: Instagram,
@@ -37,7 +38,7 @@ export function FloatingContact() {
               href={contact.href}
               target={contact.href.startsWith("http") ? "_blank" : undefined}
               rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined}
-              aria-label={contact.label}
+              aria-label={contact.ariaLabel || contact.label}
               className={`${contact.color} text-white px-5 py-3 rounded-full shadow-2xl flex items-center gap-3 transition-all duration-300 backdrop-blur-sm hover:scale-105`}
             >
               <contact.icon className="w-5 h-5" />

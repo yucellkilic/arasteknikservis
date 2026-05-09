@@ -3,6 +3,7 @@ import { Calendar, User, ArrowRight, TrendingUp } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { blogPosts } from "../../data/blogData";
+import { SEO } from "../components/SEO";
 
 export function Blog() {
   const [selectedCategory, setSelectedCategory] = useState("Tümü");
@@ -16,7 +17,12 @@ export function Blog() {
       : blogPosts.filter((post) => post.category === selectedCategory);
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-[#F8F9FA] min-h-screen">
+      <SEO 
+        title="Blog - Aras Teknik Servis | Kombi ve Beyaz Eşya Rehberi"
+        description="Kombi bakımı, klima kullanımı, beyaz eşya ömrünü uzatan tüyolar ve enerji tasarrufu hakkında uzman rehber yazıları okuyun."
+        canonicalUrl="/blog"
+      />
       {/* Hero */}
       <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#FF6B35] via-[#FF8A5C] to-[#0066FF] overflow-hidden">
         <div className="absolute inset-0">

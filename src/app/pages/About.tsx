@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
-import { Award, Users, Clock, Shield, TrendingUp, Heart, Target, Zap } from "lucide-react";
+import { Award, Users, Clock, Shield, Heart, Target, Zap } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 export function About() {
   const values = [
@@ -34,7 +35,12 @@ export function About() {
   ];
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-[#F8F9FA]">
+      <SEO 
+        title="Hakkımızda - Aras Teknik Servis | Erzurum Teknik Servis"
+        description="Erzurum'da 20 yıllık tecrübemizle kombi, klima ve beyaz eşya tamir, bakım ve montaj hizmetleri sunuyoruz. Aras Teknik Servis olarak güven ve kalite önceliğimizdir."
+        canonicalUrl="/hakkimizda"
+      />
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-[#0066FF] via-[#0052CC] to-[#00D9C0] overflow-hidden">
         <div className="absolute inset-0">

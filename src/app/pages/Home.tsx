@@ -17,6 +17,7 @@ import {
   Award,
   ArrowRight,
 } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 export function Home() {
   const navigate = useNavigate();
@@ -134,6 +135,11 @@ export function Home() {
 
   return (
     <div className="overflow-hidden" translate="no">
+      <SEO 
+        title="Aras Teknik Servis - Erzurum Kombi, Klima ve Beyaz Eşya Servisi | 7/24"
+        description="Erzurum'da 7/24 kombi, klima ve beyaz eşya teknik servis hizmeti. Hızlı, garantili ve güvenilir tamir, bakım ve montaj için Aras Teknik Servis'i hemen arayın!"
+        canonicalUrl="/"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#F8F9FA] via-white to-[#F8F9FA]">
         {/* Animated Background Elements */}
@@ -245,11 +251,14 @@ export function Home() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src="/assets/images/anasayfa_hero_sofben_tamir.webp"
+                  srcSet="/assets/images/anasayfa_hero_sofben_tamir.webp 800w, /assets/images/anasayfa_hero_sofben_tamir.webp 400w"
+                  sizes="(max-width: 640px) 400px, 800px"
                   alt="Aras Teknik Servis - Erzurum'da profesyonel kombi ve şofben tamir hizmeti"
                   width="800"
                   height="600"
                   className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover"
                   fetchpriority="high"
+                  decoding="sync"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0066FF]/30 to-transparent" />
               </div>
@@ -426,6 +435,7 @@ export function Home() {
                   height="500"
                   className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0066FF]/40 to-transparent" />
               </div>

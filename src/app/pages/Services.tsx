@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Flame, Wind, WashingMachine, Wrench, ShoppingCart, CheckCircle2, Phone } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 export function Services() {
   const services = [
@@ -126,7 +127,12 @@ export function Services() {
   ];
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-[#F8F9FA] min-h-screen">
+      <SEO 
+        title="Hizmetlerimiz - Aras Teknik Servis | Erzurum Kombi & Klima"
+        description="Kombi bakımı, klima montajı, şofben tamiri ve beyaz eşya onarım hizmetlerimiz hakkında detaylı bilgi alın. Orijinal yedek parça ve 1 yıl garantili servis."
+        canonicalUrl="/hizmetler"
+      />
       {/* Hero */}
       <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#0066FF] via-[#0052CC] to-[#00D9C0] overflow-hidden">
         <div className="absolute inset-0">

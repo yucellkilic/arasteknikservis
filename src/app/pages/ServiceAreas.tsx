@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
-import { MapPin, Phone, Clock, CheckCircle2 } from "lucide-react";
+import { MapPin, Phone, Clock, CheckCircle2, Car, Shield } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 export function ServiceAreas() {
   const areas = [
@@ -55,7 +56,12 @@ export function ServiceAreas() {
   ];
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-[#F8F9FA] min-h-screen">
+      <SEO 
+        title="Hizmet Bölgeleri - Aras Teknik Servis | Erzurum Geneli"
+        description="Yakutiye, Palandöken, Aziziye başta olmak üzere Erzurum'un tüm ilçelerine 7/24 hızlı servis ağımızla anında hizmet veriyoruz."
+        canonicalUrl="/hizmet-bolgeleri"
+      />
       {/* Hero */}
       <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#00D9C0] via-[#00B8A3] to-[#0066FF] overflow-hidden">
         <div className="absolute inset-0">

@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
-import { Phone, Mail, MapPin, Clock, Send, MessageCircle } from "lucide-react";
+import { Phone, MapPin, Clock, Send } from "lucide-react";
 import { useState } from "react";
+import { SEO } from "../components/SEO";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -53,7 +54,12 @@ export function Contact() {
   ];
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-[#F8F9FA] min-h-screen">
+      <SEO 
+        title="İletişim - Aras Teknik Servis | Bize Ulaşın"
+        description="Erzurum'da acil teknik servis ihtiyaçlarınız için bize ulaşın. 7/24 hizmet veren müşteri destek hattımız ve konum bilgilerimiz."
+        canonicalUrl="/iletisim"
+      />
       {/* Hero */}
       <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#0066FF] via-[#00D9C0] to-[#0066FF] overflow-hidden">
         <div className="absolute inset-0">
