@@ -41,7 +41,7 @@ export function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center group" translate="no">
             <img
-              src="/assets/images/logo.webp"
+              src="/assets/images/logo.png"
               alt="Aras Teknik Servis - Erzurum Kombi ve Beyaz Eşya Servisi"
               width="180"
               height="72"
