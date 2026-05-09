@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { Award, Users, Clock, Shield, Heart, Target, Zap } from "lucide-react";
 import { SEO } from "../components/SEO";
 
@@ -44,23 +43,16 @@ export function About() {
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-[#0066FF] via-[#0052CC] to-[#00D9C0] overflow-hidden">
         <div className="absolute inset-0">
-          <motion.div
-            animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0] }}
-            transition={{ duration: 20, repeat: Infinity }}
+          <div
             className="absolute top-20 left-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"
           />
-          <motion.div
-            animate={{ scale: [1.2, 1, 1.2], rotate: [90, 0, 90] }}
-            transition={{ duration: 15, repeat: Infinity }}
+          <div
             className="absolute bottom-20 right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"
           />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-10 lg:py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+          <div
           >
             <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6">
               Hakkımızda
@@ -68,7 +60,7 @@ export function About() {
             <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               20 yıldır Erzurum'da güvenilir teknik servis hizmeti sunuyoruz
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -76,10 +68,7 @@ export function About() {
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+            <div
             >
               <span className="inline-block px-4 py-2 bg-[#0066FF]/10 text-[#0066FF] rounded-full text-sm font-semibold mb-4">
                 Hikayemiz
@@ -121,12 +110,9 @@ export function About() {
                   <div className="text-gray-700 font-semibold">Mutlu Müşteri</div>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+            <div
               className="relative"
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
@@ -141,9 +127,7 @@ export function About() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0066FF]/40 to-transparent" />
               </div>
 
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity }}
+              <div
                 className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-2xl p-6 border border-gray-100"
               >
                 <div className="flex items-center gap-4">
@@ -155,8 +139,8 @@ export function About() {
                     <div className="text-sm text-gray-600">Erzurum 2024</div>
                   </div>
                 </div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -164,10 +148,7 @@ export function About() {
       {/* Values */}
       <section className="py-12 lg:py-16 bg-gradient-to-br from-[#F8F9FA] to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 bg-[#FF6B35]/10 text-[#FF6B35] rounded-full text-sm font-semibold mb-4">
@@ -179,17 +160,12 @@ export function About() {
                 Değerler
               </span>
             </h2>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <motion.div
+              <div
                 key={value.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -8 }}
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-center group"
               >
                 <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#0066FF] to-[#00D9C0] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
@@ -197,7 +173,7 @@ export function About() {
                 </div>
                 <h3 className="text-xl font-bold text-[#1A1A2E] mb-3">{value.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{value.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -206,10 +182,7 @@ export function About() {
       {/* Timeline */}
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 bg-[#00D9C0]/10 text-[#00D9C0] rounded-full text-sm font-semibold mb-4">
@@ -218,19 +191,15 @@ export function About() {
             <h2 className="text-4xl font-bold text-[#1A1A2E]">
               Kilometre Taşlarımız
             </h2>
-          </motion.div>
+          </div>
 
           <div className="relative">
             <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#0066FF] via-[#00D9C0] to-[#FF6B35]" />
 
             <div className="space-y-12">
               {timeline.map((item, index) => (
-                <motion.div
+                <div
                   key={item.year}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
                   className={`flex items-center gap-8 ${
                     index % 2 === 0 ? "flex-row" : "flex-row-reverse"
                   }`}
@@ -249,7 +218,7 @@ export function About() {
                   </div>
 
                   <div className="flex-1" />
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -259,10 +228,7 @@ export function About() {
       {/* Team Stats */}
       <section className="py-12 lg:py-16 bg-gradient-to-br from-[#0066FF] via-[#0052CC] to-[#00D9C0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -271,7 +237,7 @@ export function About() {
             <p className="text-xl text-white/90">
               Başarımızı gösteren sayılar
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
@@ -280,18 +246,14 @@ export function About() {
               { number: "7/24", label: "Kesintisiz Hizmet", icon: Clock },
               { number: "%100", label: "Müşteri Memnuniyeti", icon: Award },
             ].map((stat, index) => (
-              <motion.div
+              <div
                 key={stat.label}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
                 className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 text-center border border-white/20"
               >
                 <stat.icon className="w-12 h-12 text-white mx-auto mb-4" />
                 <div className="text-5xl font-bold text-white mb-2">{stat.number}</div>
                 <div className="text-white/90 font-medium">{stat.label}</div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

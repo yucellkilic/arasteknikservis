@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { Phone, MapPin, Clock, Send } from "lucide-react";
 import { useState } from "react";
 import { SEO } from "../components/SEO";
@@ -63,22 +62,16 @@ export function Contact() {
       {/* Hero */}
       <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#0066FF] via-[#00D9C0] to-[#0066FF] overflow-hidden">
         <div className="absolute inset-0">
-          <motion.div
-            animate={{ scale: [1, 1.3, 1], rotate: [0, 360, 0] }}
-            transition={{ duration: 30, repeat: Infinity }}
+          <div
             className="absolute top-20 left-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"
           />
-          <motion.div
-            animate={{ scale: [1.3, 1, 1.3], rotate: [360, 0, 360] }}
-            transition={{ duration: 25, repeat: Infinity }}
+          <div
             className="absolute bottom-20 right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"
           />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-10 lg:py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
           >
             <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6">
               İletişim
@@ -86,7 +79,7 @@ export function Contact() {
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
               Size nasıl yardımcı olabiliriz? Bize ulaşın!
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -95,13 +88,8 @@ export function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             {contactInfo.map((info, index) => (
-              <motion.div
+              <div
                 key={info.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -8 }}
                 className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 text-center"
               >
                 <div className={`w-16 h-16 mx-auto mb-6 bg-gradient-to-br ${info.gradient} rounded-2xl flex items-center justify-center shadow-lg`}>
@@ -127,7 +115,7 @@ export function Contact() {
                     );
                   })}
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -138,10 +126,7 @@ export function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Form */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+            <div
             >
               <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-2xl border border-gray-100">
                 <h2 className="text-3xl font-bold text-[#1A1A2E] mb-2">
@@ -238,13 +223,10 @@ export function Contact() {
                   </button>
                 </form>
               </div>
-            </motion.div>
+            </div>
 
             {/* Map & Quick Contact */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+            <div
               className="space-y-8"
             >
               {/* Map */}
@@ -283,9 +265,7 @@ export function Contact() {
               {/* Quick Contact */}
               <div className="bg-gradient-to-br from-[#FF6B35] to-[#FF8A5C] rounded-3xl p-8 shadow-2xl text-white relative overflow-hidden">
                 <div className="absolute inset-0">
-                  <motion.div
-                    animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
-                    transition={{ duration: 5, repeat: Infinity }}
+                  <div
                     className="absolute top-0 right-0 w-64 h-64 bg-white rounded-full blur-3xl"
                   />
                 </div>
@@ -315,7 +295,7 @@ export function Contact() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -323,16 +303,11 @@ export function Contact() {
       {/* Alternative Contact */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="bg-gradient-to-br from-[#0066FF] to-[#00D9C0] rounded-3xl p-12 text-center text-white relative overflow-hidden"
           >
             <div className="absolute inset-0">
-              <motion.div
-                animate={{ rotate: [0, 360] }}
-                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+              <div
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl"
               />
             </div>
@@ -360,7 +335,7 @@ export function Contact() {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

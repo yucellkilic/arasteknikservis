@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { MapPin, Phone, Clock, CheckCircle2, Car, Shield } from "lucide-react";
 import { SEO } from "../components/SEO";
 
@@ -65,17 +64,13 @@ export function ServiceAreas() {
       {/* Hero */}
       <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#00D9C0] via-[#00B8A3] to-[#0066FF] overflow-hidden">
         <div className="absolute inset-0">
-          <motion.div
-            animate={{ scale: [1, 1.3, 1], rotate: [0, 180, 360] }}
-            transition={{ duration: 25, repeat: Infinity }}
+          <div
             className="absolute top-10 left-10 w-96 h-96 bg-white/10 rounded-full blur-3xl"
           />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-10 lg:py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6 border border-white/30">
               <MapPin className="w-5 h-5 text-white" />
@@ -87,7 +82,7 @@ export function ServiceAreas() {
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
               Erzurum'un her noktasında yanınızdayız
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -96,12 +91,8 @@ export function ServiceAreas() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <motion.div
+              <div
                 key={feature.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
                 className="flex items-center gap-4"
               >
                 <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#0066FF] to-[#00D9C0] rounded-xl flex items-center justify-center shadow-lg">
@@ -111,7 +102,7 @@ export function ServiceAreas() {
                   <h3 className="font-bold text-[#1A1A2E] mb-1">{feature.title}</h3>
                   <p className="text-sm text-gray-600">{feature.description}</p>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -120,10 +111,7 @@ export function ServiceAreas() {
       {/* Areas */}
       <section className="py-12 lg:py-16 bg-gradient-to-br from-[#F8F9FA] to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 bg-[#0066FF]/10 text-[#0066FF] rounded-full text-sm font-semibold mb-4">
@@ -135,16 +123,12 @@ export function ServiceAreas() {
                 Her Yerdeyiz
               </span>
             </h2>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {areas.map((area, index) => (
-              <motion.div
+              <div
                 key={area.district}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100"
               >
                 <div className="flex items-center gap-3 mb-6">
@@ -165,15 +149,12 @@ export function ServiceAreas() {
                     </div>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 
           {/* Map Placeholder */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="bg-white rounded-3xl overflow-hidden shadow-2xl"
           >
             <div className="relative h-[500px]">
@@ -203,17 +184,14 @@ export function ServiceAreas() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* CTA */}
       <section className="py-12 lg:py-16 bg-gradient-to-br from-[#0066FF] to-[#00D9C0]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Bölgenize Hizmet Veriyor muyuz?
@@ -232,7 +210,7 @@ export function ServiceAreas() {
                 <div className="text-lg">0530 472 90 10</div>
               </div>
             </a>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

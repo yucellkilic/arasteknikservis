@@ -33,7 +33,6 @@ export default defineConfig({
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'react-helmet-async'],
           'router': ['react-router'],
-          'motion': ['motion'],
         },
       },
     },

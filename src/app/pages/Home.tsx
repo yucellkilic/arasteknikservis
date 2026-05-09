@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { Link, useNavigate } from "react-router";
 import {
   Phone,
@@ -144,20 +143,10 @@ export function Home() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#F8F9FA] via-white to-[#F8F9FA]">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <motion.div
-            animate={{
-              scale: [1, 1.2, 1],
-              rotate: [0, 180, 360],
-            }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          <div
             className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-[#0066FF]/20 to-[#00D9C0]/20 rounded-full blur-3xl"
           />
-          <motion.div
-            animate={{
-              scale: [1.2, 1, 1.2],
-              rotate: [360, 180, 0],
-            }}
-            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+          <div
             className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-[#FF6B35]/20 to-[#FF8A5C]/20 rounded-full blur-3xl"
           />
         </div>
@@ -165,21 +154,15 @@ export function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+            <div
               className="space-y-8"
             >
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
+              <div
                 className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-[#0066FF]/20"
               >
                 <div className="w-2 h-2 bg-[#00D9C0] rounded-full animate-pulse" />
                 <span className="text-sm font-medium text-gray-700">7/24 Hızlı ve Güvenilir Servis</span>
-              </motion.div>
+              </div>
 
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-[#0066FF] via-[#00D9C0] to-[#0066FF] bg-clip-text text-transparent">
@@ -200,52 +183,42 @@ export function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <motion.a
+                <a
                   href="tel:05304729010"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
                   aria-label="Hemen Ara: 0530 472 90 10"
                   className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#0066FF] to-[#00D9C0] text-white rounded-2xl font-semibold shadow-2xl hover:shadow-[0_0_40px_rgba(0,102,255,0.4)] transition-all duration-300"
                 >
                   <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />
                   <span>Hemen Ara</span>
-                </motion.a>
+                </a>
 
-                <motion.a
+                <a
                   href="https://wa.me/905304729010"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
                   aria-label="WhatsApp ile iletişim kurun"
                   className="group flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#128C7E] rounded-2xl font-semibold shadow-xl border-2 border-[#128C7E] hover:bg-[#128C7E] hover:text-white transition-all duration-300"
                 >
                   <MessageCircle className="w-6 h-6 group-hover:scale-110 transition-transform" />
                   <span>WhatsApp</span>
-                </motion.a>
+                </a>
               </div>
 
               <div className="flex items-center gap-8 pt-4">
                 {stats.slice(0, 2).map((stat, index) => (
-                  <motion.div
+                  <div
                     key={stat.label}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4 + index * 0.1 }}
                     className="text-center"
                   >
                     <div className="text-3xl font-bold bg-gradient-to-r from-[#0066FF] to-[#00D9C0] bg-clip-text text-transparent">
                       {stat.number}
                     </div>
                     <div className="text-sm text-gray-600">{stat.label}</div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
             {/* Right Image */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+            <div
               className="relative"
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
@@ -264,9 +237,7 @@ export function Home() {
               </div>
 
               {/* Floating Cards */}
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity }}
+              <div
                 className="absolute top-8 -left-4 bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl p-4 border border-white/20"
               >
                 <div className="flex items-center gap-3">
@@ -278,11 +249,9 @@ export function Home() {
                     <div className="text-sm text-gray-600">%100 Güvenli</div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
+              <div
                 className="absolute bottom-8 -right-4 bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl p-4 border border-white/20"
               >
                 <div className="flex items-center gap-3">
@@ -294,8 +263,8 @@ export function Home() {
                     <div className="text-sm text-gray-600">Hızlı Servis</div>
                   </div>
                 </div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -305,10 +274,7 @@ export function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(0,102,255,0.05),transparent_50%)]" />
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 bg-[#0066FF]/10 text-[#0066FF] rounded-full text-sm font-semibold mb-4">
@@ -320,17 +286,12 @@ export function Home() {
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Tüm ihtiyaçlarınız için profesyonel ve güvenilir teknik servis çözümleri
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {services.map((service, index) => (
-              <motion.div
+              <div
                 key={service.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -8, scale: 1.02 }}
                 onClick={() => navigate(`/hizmetler#${service.id}`)}
                 className="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer"
               >
@@ -353,14 +314,11 @@ export function Home() {
                   <span className="text-sm">Detaylı Bilgi</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mt-12"
           >
             <Link
@@ -370,7 +328,7 @@ export function Home() {
               Tüm Hizmetleri Gör
               <ArrowRight className="w-5 h-5" />
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -380,10 +338,7 @@ export function Home() {
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+            <div
             >
               <span className="inline-block px-4 py-2 bg-[#FF6B35]/10 text-[#FF6B35] rounded-full text-sm font-semibold mb-4">
                 Neden Biz?
@@ -401,12 +356,8 @@ export function Home() {
 
               <div className="space-y-6">
                 {whyUs.map((item, index) => (
-                  <motion.div
+                  <div
                     key={item.title}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
                     className="flex items-start gap-4 group"
                   >
                     <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#0066FF] to-[#00D9C0] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
@@ -416,15 +367,12 @@ export function Home() {
                       <h3 className="text-xl font-bold text-[#1A1A2E] mb-2">{item.title}</h3>
                       <p className="text-gray-600">{item.description}</p>
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+            <div
               className="relative"
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
@@ -444,23 +392,19 @@ export function Home() {
               <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-lg rounded-2xl p-6 shadow-2xl">
                 <div className="grid grid-cols-2 gap-6">
                   {stats.slice(2).map((stat, index) => (
-                    <motion.div
+                    <div
                       key={stat.label}
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.3 + index * 0.1 }}
                       className="text-center"
                     >
                       <div className="text-3xl font-bold bg-gradient-to-r from-[#0066FF] to-[#00D9C0] bg-clip-text text-transparent">
                         {stat.number}
                       </div>
                       <div className="text-sm text-gray-700 font-medium">{stat.label}</div>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -468,10 +412,7 @@ export function Home() {
       {/* Service Areas */}
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 bg-[#00D9C0]/10 text-[#00D9C0] rounded-full text-sm font-semibold mb-4">
@@ -480,17 +421,12 @@ export function Home() {
             <h2 className="text-4xl lg:text-5xl font-bold text-[#1A1A2E] mb-4">
               Erzurum Genelinde <span className="bg-gradient-to-r from-[#0066FF] to-[#00D9C0] bg-clip-text text-transparent">Hizmetinizdeyiz</span>
             </h2>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {serviceAreas.map((area, index) => (
-              <motion.div
+              <div
                 key={area}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
-                whileHover={{ scale: 1.05, y: -5 }}
                 className="bg-gradient-to-br from-white to-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 cursor-pointer group"
               >
                 <div className="flex items-center gap-3">
@@ -501,14 +437,11 @@ export function Home() {
                     {area}
                   </span>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mt-12"
           >
             <Link
@@ -518,17 +451,14 @@ export function Home() {
               Tüm Bölgeleri Gör
               <ArrowRight className="w-5 h-5" />
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* FAQ Section */}
       <section className="py-12 lg:py-16 bg-gradient-to-br from-[#F8F9FA] to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 bg-[#FF6B35]/10 text-[#FF6B35] rounded-full text-sm font-semibold mb-4">
@@ -537,16 +467,12 @@ export function Home() {
             <h2 className="text-4xl lg:text-5xl font-bold text-[#1A1A2E] mb-4">
               Merak Ettikleriniz
             </h2>
-          </motion.div>
+          </div>
 
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <motion.div
+              <div
                 key={faq.question}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
                 <div className="flex items-start gap-4">
@@ -558,14 +484,11 @@ export function Home() {
                     <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mt-12"
           >
             <Link
@@ -575,30 +498,23 @@ export function Home() {
               Tüm Soruları Gör
               <ArrowRight className="w-5 h-5" />
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-12 lg:py-16 bg-gradient-to-br from-[#0066FF] via-[#0052CC] to-[#00D9C0] relative overflow-hidden">
         <div className="absolute inset-0">
-          <motion.div
-            animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
-            transition={{ duration: 8, repeat: Infinity }}
+          <div
             className="absolute top-0 left-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl"
           />
-          <motion.div
-            animate={{ scale: [1.2, 1, 1.2], opacity: [0.5, 0.3, 0.5] }}
-            transition={{ duration: 10, repeat: Infinity }}
+          <div
             className="absolute bottom-0 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl"
           />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Hemen Bize Ulaşın!
@@ -609,10 +525,8 @@ export function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <motion.a
+              <a
                 href="tel:05304729010"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
                 className="group flex items-center gap-3 px-10 py-5 bg-white text-[#0066FF] rounded-2xl font-bold shadow-2xl hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all duration-300"
               >
                 <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />
@@ -620,19 +534,17 @@ export function Home() {
                   <div className="text-xs text-gray-600">Hemen Ara</div>
                   <div className="text-lg">0530 472 90 10</div>
                 </div>
-              </motion.a>
+              </a>
 
-              <motion.a
+              <a
                 href="https://wa.me/905304729010"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
                 className="group flex items-center gap-3 px-10 py-5 bg-[#25D366] text-white rounded-2xl font-bold shadow-2xl hover:shadow-[0_0_40px_rgba(37,211,102,0.4)] transition-all duration-300"
               >
                 <MessageCircle className="w-6 h-6 group-hover:scale-110 transition-transform" />
                 <span>WhatsApp ile Yaz</span>
-              </motion.a>
+              </a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

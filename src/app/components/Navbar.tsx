@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router";
-import { motion } from "motion/react";
+
 import { Phone, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -27,9 +27,7 @@ export function Navbar() {
   ];
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
+    <nav
       className={`fixed top-[36px] left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
           ? "bg-white/90 backdrop-blur-lg shadow-lg"
@@ -67,7 +65,7 @@ export function Navbar() {
                   {link.label}
                 </span>
                 {location.pathname === link.path && (
-                  <motion.div
+                  <div
                     layoutId="navbar-indicator"
                     className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-[#0066FF] to-[#00D9C0]"
                   />
@@ -106,10 +104,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
+        <div
           className="lg:hidden bg-white border-t border-gray-200"
         >
           <div className="px-4 py-6 space-y-4" translate="no">
@@ -136,8 +131,8 @@ export function Navbar() {
               <span>0530 472 90 10</span>
             </a>
           </div>
-        </motion.div>
+        </div>
       )}
-    </motion.nav>
+    </nav>
   );
 }

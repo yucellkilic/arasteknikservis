@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { Flame, Wind, WashingMachine, Wrench, ShoppingCart, CheckCircle2, Phone } from "lucide-react";
 import { SEO } from "../components/SEO";
 
@@ -136,17 +135,13 @@ export function Services() {
       {/* Hero */}
       <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#0066FF] via-[#0052CC] to-[#00D9C0] overflow-hidden">
         <div className="absolute inset-0">
-          <motion.div
-            animate={{ scale: [1, 1.2, 1] }}
-            transition={{ duration: 20, repeat: Infinity }}
+          <div
             className="absolute top-10 right-10 w-96 h-96 bg-white/10 rounded-full blur-3xl"
           />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-10 lg:py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
           >
             <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6">
               Hizmetlerimiz
@@ -154,7 +149,7 @@ export function Services() {
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
               Kombi, klima ve beyaz eşya konusunda tam teşekküllü servis hizmetleri
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -163,13 +158,9 @@ export function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-24">
             {services.map((service, index) => (
-              <motion.div
+              <div
                 id={service.id}
                 key={service.title}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
                 className={`grid lg:grid-cols-2 gap-12 items-center ${
                   index % 2 === 1 ? "lg:flex-row-reverse" : ""
                 }`}
@@ -224,7 +215,7 @@ export function Services() {
                     <span>Hemen Ara</span>
                   </a>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -233,10 +224,7 @@ export function Services() {
       {/* Brands */}
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 bg-[#00D9C0]/10 text-[#00D9C0] rounded-full text-sm font-semibold mb-4">
@@ -251,23 +239,18 @@ export function Services() {
             <p className="text-xl text-gray-600">
               Yerli ve yabancı tüm markaların yetkili servis hizmeti
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {brands.map((brand, index) => (
-              <motion.div
+              <div
                 key={brand}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
-                whileHover={{ scale: 1.05, y: -5 }}
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 flex items-center justify-center group cursor-pointer"
               >
                 <span className="text-xl font-bold text-gray-700 group-hover:text-[#0066FF] transition-colors">
                   {brand}
                 </span>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -276,18 +259,13 @@ export function Services() {
       {/* CTA */}
       <section className="py-12 lg:py-16 bg-gradient-to-br from-[#0066FF] to-[#00D9C0] relative overflow-hidden">
         <div className="absolute inset-0">
-          <motion.div
-            animate={{ rotate: [0, 360] }}
-            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+          <div
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/5 rounded-full blur-3xl"
           />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Hizmetlerimiz Hakkında Detaylı Bilgi
@@ -305,7 +283,7 @@ export function Services() {
                 <span>0530 472 90 10</span>
               </a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { ChevronDown, HelpCircle, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 import { SEO } from "../components/SEO";
@@ -95,22 +94,16 @@ export function FAQ() {
       {/* Hero */}
       <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#0066FF] via-[#00D9C0] to-[#FF6B35] overflow-hidden">
         <div className="absolute inset-0">
-          <motion.div
-            animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
-            transition={{ duration: 25, repeat: Infinity }}
+          <div
             className="absolute top-10 left-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl"
           />
-          <motion.div
-            animate={{ scale: [1.2, 1, 1.2], rotate: [360, 180, 0] }}
-            transition={{ duration: 20, repeat: Infinity }}
+          <div
             className="absolute bottom-10 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl"
           />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-10 lg:py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6 border border-white/30">
               <HelpCircle className="w-5 h-5 text-white" />
@@ -122,7 +115,7 @@ export function FAQ() {
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
               Merak ettiğiniz her şey burada. Cevabını bulamadıysanız bizi arayın!
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -131,12 +124,8 @@ export function FAQ() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-12">
             {faqs.map((category, categoryIndex) => (
-              <motion.div
+              <div
                 key={category.category}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: categoryIndex * 0.1 }}
               >
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-1 h-8 bg-gradient-to-b from-[#0066FF] to-[#00D9C0] rounded-full" />
@@ -149,12 +138,8 @@ export function FAQ() {
                     const isOpen = openIndex === globalIndex;
 
                     return (
-                      <motion.div
+                      <div
                         key={faq.q}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.05 }}
                         className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
                       >
                         <button
@@ -181,24 +166,16 @@ export function FAQ() {
                             </h3>
                           </div>
 
-                          <motion.div
-                            animate={{ rotate: isOpen ? 180 : 0 }}
-                            transition={{ duration: 0.3 }}
+                          <div
                             className="flex-shrink-0"
                           >
                             <ChevronDown className={`w-6 h-6 transition-colors ${
                               isOpen ? "text-[#0066FF]" : "text-gray-400"
                             }`} />
-                          </motion.div>
+                          </div>
                         </button>
 
-                        <motion.div
-                          initial={false}
-                          animate={{
-                            height: isOpen ? "auto" : 0,
-                            opacity: isOpen ? 1 : 0,
-                          }}
-                          transition={{ duration: 0.3 }}
+                        <div
                           className="overflow-hidden"
                         >
                           <div className="px-6 pb-6 pl-[4.5rem]">
@@ -206,12 +183,12 @@ export function FAQ() {
                               {faq.a}
                             </p>
                           </div>
-                        </motion.div>
-                      </motion.div>
+                        </div>
+                      </div>
                     );
                   })}
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -220,16 +197,11 @@ export function FAQ() {
       {/* Still Have Questions */}
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
           >
             <div className="bg-gradient-to-br from-[#0066FF] via-[#0052CC] to-[#00D9C0] rounded-3xl p-12 shadow-2xl relative overflow-hidden">
               <div className="absolute inset-0">
-                <motion.div
-                  animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
-                  transition={{ duration: 8, repeat: Infinity }}
+                <div
                   className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"
                 />
               </div>
@@ -260,7 +232,7 @@ export function FAQ() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

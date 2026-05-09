@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { Calendar, User, ArrowRight, TrendingUp } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
@@ -26,17 +25,13 @@ export function Blog() {
       {/* Hero */}
       <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#FF6B35] via-[#FF8A5C] to-[#0066FF] overflow-hidden">
         <div className="absolute inset-0">
-          <motion.div
-            animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0] }}
-            transition={{ duration: 20, repeat: Infinity }}
+          <div
             className="absolute top-20 right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"
           />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-10 lg:py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6 border border-white/30">
               <TrendingUp className="w-5 h-5 text-white" />
@@ -48,7 +43,7 @@ export function Blog() {
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
               Teknik servis dünyasından faydalı bilgiler ve güncel haberler
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -57,14 +52,9 @@ export function Blog() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap gap-3 justify-center">
             {categories.map((category, index) => (
-              <motion.button
+              <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.05 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
                 className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
                   selectedCategory === category
                     ? "bg-gradient-to-r from-[#0066FF] to-[#00D9C0] text-white shadow-lg"
@@ -72,7 +62,7 @@ export function Blog() {
                 }`}
               >
                 {category}
-              </motion.button>
+              </button>
             ))}
           </div>
         </div>
@@ -83,10 +73,7 @@ export function Blog() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Featured Post (Only show if "Tümü" or matches category and there are posts) */}
           {filteredPosts.length > 0 && (
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+            <div
               className="mb-16 cursor-pointer"
               onClick={() => navigate(`/blog/${filteredPosts[0].slug}`)}
             >
@@ -131,20 +118,15 @@ export function Blog() {
                   </button>
                 </div>
               </div>
-            </motion.div>
+            </div>
           )}
 
           {/* Regular Posts Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.slice(1).map((post, index) => (
-              <motion.article
+              <article
                 key={post.slug}
                 onClick={() => navigate(`/blog/${post.slug}`)}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -8 }}
                 className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer group"
               >
                 <div className="relative h-56 overflow-hidden">
@@ -182,7 +164,7 @@ export function Blog() {
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
                   </div>
                 </div>
-              </motion.article>
+              </article>
             ))}
           </div>
 

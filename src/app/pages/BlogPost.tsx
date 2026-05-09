@@ -1,5 +1,4 @@
 import { useParams, useNavigate } from "react-router";
-import { motion } from "motion/react";
 import { Calendar, User, ArrowLeft, ArrowRight } from "lucide-react";
 import { blogPosts } from "../../data/blogData";
 import { useEffect } from "react";
@@ -56,9 +55,7 @@ export function BlogPost() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
         
         <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-16 max-w-5xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
           >
             <button
               onClick={() => navigate("/blog")}
@@ -84,17 +81,14 @@ export function BlogPost() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
               {post.title}
             </h1>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Content */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
+          <div
             className="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-gray-100"
           >
             <p className="text-xl sm:text-2xl text-gray-700 font-medium leading-relaxed mb-10 border-l-4 border-[#0066FF] pl-6">
@@ -106,7 +100,7 @@ export function BlogPost() {
                 <p key={idx} className="mb-6">{paragraph}</p>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -117,14 +111,9 @@ export function BlogPost() {
             <h2 className="text-3xl font-bold text-[#1A1A2E] mb-10">İlgili Yazılar</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {relatedPosts.map((relatedPost, index) => (
-                <motion.article
+                <article
                   key={relatedPost.slug}
                   onClick={() => navigate(`/blog/${relatedPost.slug}`)}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  whileHover={{ y: -8 }}
                   className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer group border border-gray-100"
                 >
                   <div className="relative h-48 overflow-hidden">
@@ -147,7 +136,7 @@ export function BlogPost() {
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
                     </div>
                   </div>
-                </motion.article>
+                </article>
               ))}
             </div>
           </div>

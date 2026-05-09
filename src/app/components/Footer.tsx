@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook } from "lucide-react";
-import { motion } from "motion/react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -31,10 +30,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="space-y-6"
           >
             <div className="flex items-center gap-3">
@@ -61,14 +57,10 @@ export function Footer() {
                 </a>
               ))}
             </div>
-          </motion.div>
+          </div>
 
           {/* Quick Links */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+          <div
           >
             <h4 className="font-bold text-lg mb-6 text-[#00D9C0]">Hızlı Bağlantılar</h4>
             <ul className="space-y-3">
@@ -84,14 +76,10 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* Services */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+          <div
           >
             <h4 className="font-bold text-lg mb-6 text-[#00D9C0]">Hizmetlerimiz</h4>
             <ul className="space-y-3">
@@ -104,14 +92,10 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
+          <div
           >
             <h4 className="font-bold text-lg mb-6 text-[#00D9C0]">İletişim</h4>
             <ul className="space-y-4">
@@ -142,7 +126,7 @@ export function Footer() {
                 <span className="text-gray-300">7/24 Hizmetinizdeyiz</span>
               </li>
             </ul>
-          </motion.div>
+          </div>
         </div>
       </div>
 
