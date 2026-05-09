@@ -1,93 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Ana Sayfa -->
   <url>
-    <loc>https://arasteknik.com/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Hakkımızda -->
   <url>
-    <loc>https://arasteknik.com/hakkimizda</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/hakkimizda</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Hizmetler -->
   <url>
-    <loc>https://arasteknik.com/hizmetler</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/hizmetler</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Hizmet Bölgeleri -->
   <url>
-    <loc>https://arasteknik.com/hizmet-bolgeleri</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/hizmet-bolgeleri</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog -->
   <url>
-    <loc>https://arasteknik.com/blog</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/blog</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- SSS -->
   <url>
-    <loc>https://arasteknik.com/sss</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/sss</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- İletişim -->
   <url>
-    <loc>https://arasteknik.com/iletisim</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/iletisim</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog Yazıları -->
   <url>
-    <loc>https://arasteknik.com/blog/kombi-bakimi-ne-zaman-yapilmali</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/blog/kombi-bakimi-ne-zaman-yapilmali</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://arasteknik.com/blog/klima-bakiminin-onemi</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/blog/klima-bakiminin-onemi</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://arasteknik.com/blog/sofben-arizalari-ve-cozumleri</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/blog/sofben-arizalari-ve-cozumleri</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://arasteknik.com/blog/beyaz-esya-bakim-rehberi</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/blog/beyaz-esya-bakim-rehberi</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://arasteknik.com/blog/erzurumda-kis-hazirligi</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/blog/erzurumda-kis-hazirligi</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://arasteknik.com/blog/enerji-tasarrufu-ipuclari</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/blog/enerji-tasarrufu-ipuclari</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://arasteknik.com/blog/kombi-su-basinci-nasil-ayarlanir</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/blog/kombi-su-basinci-nasil-ayarlanir</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://arasteknik.com/blog/orijinal-yedek-parca-onemi</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://arasteknikerzurum.com.tr/blog/orijinal-yedek-parca-onemi</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
 </urlset>

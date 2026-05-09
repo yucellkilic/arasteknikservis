@@ -172,7 +172,9 @@ export function Services() {
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
                     <img
                       src={service.image}
-                      alt={service.title}
+                      alt={`${service.title} - Erzurum Aras Teknik Servis`}
+                      width="800"
+                      height="400"
                       className="w-full h-[300px] sm:h-[400px] object-cover group-hover:scale-110 transition-transform duration-700"
                       loading="lazy"
                     />
@@ -209,6 +211,7 @@ export function Services() {
 
                   <a
                     href="tel:05304729010"
+                    aria-label={`${service.title} için hemen ara: 0530 472 90 10`}
                     className={`inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r ${service.gradient} text-white rounded-2xl font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300`}
                   >
                     <Phone className="w-5 h-5" />

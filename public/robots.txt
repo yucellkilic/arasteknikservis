@@ -1,4 +1,23 @@
+# Aras Teknik Servis - Erzurum
+# https://arasteknikerzurum.com.tr
+
 User-agent: *
 Allow: /
 
-Sitemap: https://arasteknik.com/sitemap.xml
+# Sitemap
+Sitemap: https://arasteknikerzurum.com.tr/sitemap.xml
+
+# Google bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+# Bing bot
+User-agent: Bingbot
+Allow: /
+
+# Yandex bot
+User-agent: YandexBot
+Allow: /

@@ -13,7 +13,6 @@ export function ServiceAreas() {
         "Yunusemre",
         "Lalapaşa",
         "Cumhuriyet",
-        "Osmangazi",
       ],
     },
     {
@@ -21,10 +20,8 @@ export function ServiceAreas() {
       neighborhoods: [
         "Yenişehir",
         "Hilalkent",
-        "Karaçoban",
         "Yoncalık",
         "Kayakyolu",
-        "Malmeydanı",
       ],
     },
     {
@@ -176,8 +173,11 @@ export function ServiceAreas() {
             <div className="relative h-[500px]">
               <img
                 src="https://images.unsplash.com/photo-1635433084393-c569daa8b0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlcnp1cnVtJTIwdHVya2V5JTIwY2l0eSUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3Nzc0MDcyNTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Erzurum Haritası"
+                alt="Erzurum şehir manzarası - Aras Teknik Servis hizmet bölgesi"
+                width="1080"
+                height="500"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               

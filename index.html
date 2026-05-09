@@ -1,16 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-Language" content="tr" />
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Aras Teknik Servis - Erzurum Kombi ve Beyaz Eşya</title>
-      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
-    </head>
+    <!-- SEO Meta Tags -->
+    <title>Aras Teknik Servis - Erzurum Kombi, Klima ve Beyaz Eşya Servisi | 7/24</title>
+    <meta name="description" content="Erzurum kombi, klima ve beyaz eşya servisi. 7/24 hızlı, garantili ve güvenilir teknik servis hizmeti. Aras Teknik Servis hemen arayın!" />
+    <meta name="keywords" content="Erzurum kombi servisi, Erzurum klima servisi, Erzurum beyaz eşya tamiri, kombi bakımı Erzurum, şofben tamiri Erzurum, 7/24 teknik servis Erzurum, Aras Teknik Servis" />
+    <meta name="author" content="Aras Teknik Servis" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://arasteknikerzurum.com.tr/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arasteknikerzurum.com.tr/" />
+    <meta property="og:title" content="Aras Teknik Servis - Erzurum Kombi, Klima ve Beyaz Eşya Servisi" />
+    <meta property="og:description" content="Erzurum'da 7/24 kombi, klima ve beyaz eşya servisi. Hızlı, garantili ve güvenilir teknik servis hizmeti." />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Aras Teknik Servis" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aras Teknik Servis - Erzurum Kombi, Klima ve Beyaz Eşya Servisi" />
+    <meta name="twitter:description" content="Erzurum'da 7/24 kombi, klima ve beyaz eşya servisi. Hızlı, garantili ve güvenilir teknik servis hizmeti." />
+
+    <!-- Geo Tags for Local SEO -->
+    <meta name="geo.region" content="TR-25" />
+    <meta name="geo.placename" content="Erzurum" />
+    <meta name="geo.position" content="39.9055;41.2658" />
+    <meta name="ICBM" content="39.9055, 41.2658" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/favicion.png" />
+
+    <!-- Google Fonts: Preload + Async Load (Render-blocking fix) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      />
+    </noscript>
+
+    <!-- Preload Hero Image (LCP optimization) -->
+    <link rel="preload" as="image" type="image/webp" href="/assets/images/anasayfa_hero_sofben_tamir.webp" />
+
+    <!-- Structured Data: LocalBusiness (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://arasteknikerzurum.com.tr",
+      "name": "Aras Teknik Servis",
+      "description": "Erzurum'da 7/24 kombi, klima, şofben ve beyaz eşya teknik servis hizmeti.",
+      "url": "https://arasteknikerzurum.com.tr",
+      "telephone": ["+905304729010", "+905352000570", "+905423530992"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gez Mahallesi, Alirıza Bey Sokak, Doğanay Apartmanı Altı No:1",
+        "addressLocality": "Yakutiye",
+        "addressRegion": "Erzurum",
+        "postalCode": "25000",
+        "addressCountry": "TR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.9055,
+        "longitude": 41.2658
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Erzurum"
+      },
+      "priceRange": "$$",
+      "image": "https://arasteknikerzurum.com.tr/assets/images/logo.png",
+      "sameAs": [
+        "https://instagram.com/arasteknikservis25",
+        "https://facebook.com/share/1JxXoDH9Ly/?mibextid=wwXlfr"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Teknik Servis Hizmetleri",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kombi Servisi"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Klima Servisi"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Şofben Servisi"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Beyaz Eşya Servisi"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Yedek Parça"}}
+        ]
+      }
+    }
+    </script>
+
+    <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

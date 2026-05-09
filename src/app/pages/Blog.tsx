@@ -89,8 +89,10 @@ export function Blog() {
                   <img
                     src={filteredPosts[0].image}
                     alt={filteredPosts[0].title}
+                    width="800"
+                    height="400"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    fetchpriority="high"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className={`absolute top-6 left-6 px-4 py-2 bg-gradient-to-r ${filteredPosts[0].gradient} text-white rounded-full text-sm font-semibold`}>
@@ -143,6 +145,8 @@ export function Blog() {
                   <img
                     src={post.image}
                     alt={post.title}
+                    width="400"
+                    height="224"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     loading="lazy"
                   />

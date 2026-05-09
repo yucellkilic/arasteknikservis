@@ -41,8 +41,10 @@ export function BlogPost() {
         <img
           src={post.image}
           alt={post.title}
+          width="1200"
+          height="600"
           className="w-full h-full object-cover"
-          fetchpriority="high"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
         
@@ -53,6 +55,7 @@ export function BlogPost() {
           >
             <button
               onClick={() => navigate("/blog")}
+              aria-label="Blog sayfasına dön"
               className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors"
             >
               <ArrowLeft className="w-5 h-5" />
@@ -121,6 +124,8 @@ export function BlogPost() {
                     <img
                       src={relatedPost.image}
                       alt={relatedPost.title}
+                      width="400"
+                      height="192"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       loading="lazy"
                     />

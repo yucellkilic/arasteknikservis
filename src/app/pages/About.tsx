@@ -126,7 +126,9 @@ export function About() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src="/assets/images/hakkimizda.webp"
-                  alt="Aras Teknik Servis Ekibi"
+                  alt="Aras Teknik Servis uzman ekibi - Erzurum'da 20 yıllık deneyim"
+                  width="800"
+                  height="500"
                   className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                   loading="lazy"
                 />

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+/* Google Fonts loaded asynchronously via index.html preload pattern */
+/* font-display: swap ensures text remains visible during font load */
 
 * {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;

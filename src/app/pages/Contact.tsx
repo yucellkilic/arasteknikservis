@@ -222,15 +222,14 @@ export function Contact() {
                     />
                   </div>
 
-                  <motion.button
+                  <button
                     type="submit"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="w-full flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#0066FF] to-[#00D9C0] text-white rounded-2xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300"
+                    aria-label="Formu WhatsApp üzerinden gönder"
+                    className="w-full flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#0066FF] to-[#00D9C0] text-white rounded-2xl font-bold shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
                   >
                     <Send className="w-5 h-5" />
                     <span>Gönder</span>
-                  </motion.button>
+                  </button>
                 </form>
               </div>
             </motion.div>
@@ -247,8 +246,11 @@ export function Contact() {
                 <div className="relative h-[400px]">
                   <img
                     src="https://images.unsplash.com/photo-1635433084393-c569daa8b0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlcnp1cnVtJTIwdHVya2V5JTIwY2l0eSUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3Nzc0MDcyNTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                    alt="Erzurum Haritası"
+                    alt="Erzurum şehir manzarası - Aras Teknik Servis hizmet bölgesi"
+                    width="1080"
+                    height="400"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   

@@ -33,4 +33,28 @@ export default defineConfig({
 
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
+
+  build: {
+    // Optimize chunk splitting for better caching
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Separate vendor chunks for better caching
+          'react-vendor': ['react', 'react-dom'],
+          'router': ['react-router'],
+          'motion': ['motion'],
+        },
+      },
+    },
+    // Reduce chunk size warnings threshold
+    chunkSizeWarningLimit: 200,
+    // CSS code splitting
+    cssCodeSplit: true,
+    // Source maps off for production (smaller deploy)
+    sourcemap: false,
+    // Minification
+    minify: 'esbuild',
+    // Target modern browsers for smaller output
+    target: 'es2020',
+  },
 })

@@ -153,6 +153,8 @@ export function FAQ() {
                       >
                         <button
                           onClick={() => setOpenIndex(isOpen ? null : globalIndex)}
+                          aria-label={`${faq.q} - ${isOpen ? "Cevabı gizle" : "Cevabı göster"}`}
+                          aria-expanded={isOpen}
                           className="w-full px-6 py-6 flex items-start gap-4 text-left hover:bg-gray-50 transition-colors"
                         >
                           <div className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300 ${

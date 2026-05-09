@@ -26,49 +26,49 @@ export function Home() {
       id: "sofben",
       icon: Flame,
       title: "Şofben Servisi",
-      description: "Şofben tamir, bakım ve montaj hizmetleri",
+      description: "Tamir, bakım ve montaj.",
       gradient: "from-orange-500 to-red-500",
     },
     {
       id: "kombi",
       icon: Flame,
       title: "Kombi Servisi",
-      description: "Tüm markalarda kombi bakım ve onarım",
+      description: "Kapsamlı bakım ve onarım.",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
       id: "tamir-bakim",
       icon: Wrench,
       title: "Tamir & Bakım",
-      description: "Profesyonel tamir ve periyodik bakım",
+      description: "Profesyonel ve düzenli bakım.",
       gradient: "from-purple-500 to-pink-500",
     },
     {
       id: "alim-satim",
       icon: ShoppingCart,
       title: "Alım Satım",
-      description: "2. el cihaz alım satım hizmetleri",
+      description: "2. el alım ve satım.",
       gradient: "from-green-500 to-emerald-500",
     },
     {
       id: "yedek-parca",
       icon: ShoppingCart,
       title: "Yedek Parça",
-      description: "Orijinal ve uygun fiyatlı yedek parçalar",
+      description: "Orijinal yedek parça temini.",
       gradient: "from-yellow-500 to-orange-500",
     },
     {
       id: "klima",
       icon: Wind,
       title: "Klima Servisi",
-      description: "Klima montaj, bakım ve gaz dolumu",
+      description: "Montaj, bakım ve gaz dolumu.",
       gradient: "from-cyan-500 to-blue-500",
     },
     {
       id: "beyaz-esya",
       icon: WashingMachine,
       title: "Beyaz Eşya",
-      description: "Bulaşık, çamaşır makinesi servisi",
+      description: "Tüm beyaz eşya servis hizmetleri.",
       gradient: "from-indigo-500 to-purple-500",
     },
   ];
@@ -109,7 +109,6 @@ export function Home() {
     "Aziziye",
     "Dadaşkent",
     "Lalapaşa",
-    "Osmangazi",
     "Gez Mahallesi",
     "Kazımkarabekir",
   ];
@@ -134,7 +133,7 @@ export function Home() {
   ];
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden" translate="no">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#F8F9FA] via-white to-[#F8F9FA]">
         {/* Animated Background Elements */}
@@ -199,6 +198,7 @@ export function Home() {
                   href="tel:05304729010"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  aria-label="Hemen Ara: 0530 472 90 10"
                   className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#0066FF] to-[#00D9C0] text-white rounded-2xl font-semibold shadow-2xl hover:shadow-[0_0_40px_rgba(0,102,255,0.4)] transition-all duration-300"
                 >
                   <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />
@@ -209,7 +209,8 @@ export function Home() {
                   href="https://wa.me/905304729010"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#25D366] rounded-2xl font-semibold shadow-xl border-2 border-[#25D366] hover:bg-[#25D366] hover:text-white transition-all duration-300"
+                  aria-label="WhatsApp ile iletişim kurun"
+                  className="group flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#128C7E] rounded-2xl font-semibold shadow-xl border-2 border-[#128C7E] hover:bg-[#128C7E] hover:text-white transition-all duration-300"
                 >
                   <MessageCircle className="w-6 h-6 group-hover:scale-110 transition-transform" />
                   <span>WhatsApp</span>
@@ -244,7 +245,9 @@ export function Home() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src="/assets/images/anasayfa_hero_sofben_tamir.webp"
-                  alt="Aras Teknik Servis - Profesyonel Hizmet"
+                  alt="Aras Teknik Servis - Erzurum'da profesyonel kombi ve şofben tamir hizmeti"
+                  width="800"
+                  height="600"
                   className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover"
                   fetchpriority="high"
                 />
@@ -330,7 +333,7 @@ export function Home() {
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
 
-                <h3 className="text-xl font-bold text-[#1A1A2E] mb-2 group-hover:text-[#0066FF] transition-colors">
+                <h3 className="text-xl font-bold text-[#1A1A2E] mb-2 group-hover:text-[#0066FF] transition-colors" translate="no">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -418,7 +421,9 @@ export function Home() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src="/assets/images/nedenbiz.webp"
-                  alt="Profesyonel Ekibimiz"
+                  alt="Aras Teknik Servis profesyonel ekibi - Erzurum teknik servis"
+                  width="800"
+                  height="500"
                   className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                   loading="lazy"
                 />
