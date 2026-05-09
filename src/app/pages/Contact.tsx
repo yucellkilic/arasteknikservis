@@ -1,4 +1,4 @@
-import { Phone, MapPin, Clock, Send } from "lucide-react";
+import { Phone, MapPin, Clock, Send, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { SEO } from "../components/SEO";
 

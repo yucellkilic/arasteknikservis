@@ -1,4 +1,4 @@
-import { Award, Users, Clock, Shield, Heart, Target, Zap } from "lucide-react";
+import { Award, Users, Clock, Shield, Heart, Target, Zap, TrendingUp } from "lucide-react";
 import { SEO } from "../components/SEO";
 
 export function About() {
