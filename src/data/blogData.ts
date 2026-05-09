@@ -21,7 +21,7 @@ Bakım sırasında filtreler temizlenir, ateşleme sistemi kontrol edilir ve gen
     date: "15 Nisan 2026",
     author: "Aras Teknik",
     category: "Kombi",
-    image: "/assets/images/kombi.webp",
+    image: "/assets/kombi.webp",
     gradient: "from-blue-500 to-cyan-500",
   },
   {
@@ -34,7 +34,7 @@ Ayrıca, bakımı yapılmayan bir klima soğutma işlemini yerine getirebilmek i
     date: "12 Nisan 2026",
     author: "Aras Teknik",
     category: "Klima",
-    image: "/assets/images/klima.webp",
+    image: "/assets/klima.webp",
     gradient: "from-cyan-500 to-blue-500",
   },
   {
@@ -47,7 +47,7 @@ Bir diğer yaygın sorun ise şofbenin su sızdırmasıdır; bu da bağlantı no
     date: "8 Nisan 2026",
     author: "Aras Teknik",
     category: "Şofben",
-    image: "/assets/images/sofben.webp",
+    image: "/assets/sofben.webp",
     gradient: "from-orange-500 to-red-500",
   },
   {
@@ -60,7 +60,7 @@ Bulaşık makinelerinde ise filtre temizliği bir numaralı önceliktir. Ayda bi
     date: "5 Nisan 2026",
     author: "Aras Teknik",
     category: "Beyaz Eşya",
-    image: "/assets/images/beyazesya.webp",
+    image: "/assets/beyazesya.webp",
     gradient: "from-purple-500 to-pink-500",
   },
   {
@@ -73,7 +73,7 @@ Ayrıca su tesisatlarında donmayı önlemek için yalıtım yapılması ve komb
     date: "1 Nisan 2026",
     author: "Aras Teknik",
     category: "Genel",
-    image: "/assets/images/nedenbiz.webp",
+    image: "/assets/nedenbiz.webp",
     gradient: "from-indigo-500 to-purple-500",
   },
   {
@@ -86,7 +86,7 @@ Klima kullanımında ise ideal soğutma derecesinin 23-24°C olduğunu unutmayı
     date: "28 Mart 2026",
     author: "Aras Teknik",
     category: "Genel",
-    image: "/assets/images/hakkimizda.webp",
+    image: "/assets/hakkimizda.webp",
     gradient: "from-green-500 to-emerald-500",
   },
   {
@@ -99,7 +99,7 @@ Basınç düştüğünde, kombinin alt kısmında bulunan su doldurma musluğunu
     date: "20 Mart 2026",
     author: "Aras Teknik",
     category: "Kombi",
-    image: "/assets/images/kombi.webp",
+    image: "/assets/kombi.webp",
     gradient: "from-blue-600 to-indigo-600",
   },
   {
@@ -112,7 +112,7 @@ Orijinal parçalar doğrudan üretici tarafından o cihazın teknik özellikleri
     date: "15 Mart 2026",
     author: "Aras Teknik",
     category: "Genel",
-    image: "/assets/images/yedekparca.webp",
+    image: "/assets/yedekparca.webp",
     gradient: "from-yellow-500 to-amber-500",
   }
 ];

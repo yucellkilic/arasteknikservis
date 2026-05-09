@@ -223,8 +223,8 @@ export function Home() {
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/images/anasayfa_hero_sofben_tamir.webp"
-                  srcSet="/assets/images/anasayfa_hero_sofben_tamir.webp 800w, /assets/images/anasayfa_hero_sofben_tamir.webp 400w"
+                  src="/assets/anasayfa_hero_sofben_tamir.webp"
+                  srcSet="/assets/anasayfa_hero_sofben_tamir.webp 800w, /assets/anasayfa_hero_sofben_tamir.webp 400w"
                   sizes="(max-width: 640px) 400px, 800px"
                   alt="Aras Teknik Servis - Erzurum'da profesyonel kombi ve şofben tamir hizmeti"
                   width="800"
@@ -377,7 +377,7 @@ export function Home() {
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/images/nedenbiz.webp"
+                  src="/assets/nedenbiz.webp"
                   alt="Aras Teknik Servis profesyonel ekibi - Erzurum teknik servis"
                   width="800"
                   height="500"

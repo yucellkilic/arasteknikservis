@@ -15,7 +15,7 @@ export function Services() {
         "Yedek parça değişimi",
         "Garanti kapsamında işlemler",
       ],
-      image: "/assets/images/sofben.webp",
+      image: "/assets/sofben.webp",
       gradient: "from-orange-500 to-red-500",
     },
     {
@@ -30,7 +30,7 @@ export function Services() {
         "Radyatör temizliği",
         "Sistem basınç kontrolü",
       ],
-      image: "/assets/images/kombi.webp",
+      image: "/assets/kombi.webp",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
@@ -45,7 +45,7 @@ export function Services() {
         "Garanti sonrası destek",
         "Acil servis hizmeti",
       ],
-      image: "/assets/images/tamirbakim.webp",
+      image: "/assets/tamirbakim.webp",
       gradient: "from-purple-500 to-pink-500",
     },
     {
@@ -60,7 +60,7 @@ export function Services() {
         "Yerinde değerleme",
         "Güvenilir ticaret",
       ],
-      image: "/assets/images/alimsatim.webp",
+      image: "/assets/alimsatim.webp",
       gradient: "from-green-500 to-emerald-500",
     },
     {
@@ -75,7 +75,7 @@ export function Services() {
         "Garantili parçalar",
         "Geniş stok ağı",
       ],
-      image: "/assets/images/yedekparca.webp",
+      image: "/assets/yedekparca.webp",
       gradient: "from-yellow-500 to-orange-500",
     },
     {
@@ -90,7 +90,7 @@ export function Services() {
         "Klima bakımı",
         "Arıza onarımı",
       ],
-      image: "/assets/images/klima.webp",
+      image: "/assets/klima.webp",
       gradient: "from-cyan-500 to-blue-500",
     },
     {
@@ -105,7 +105,7 @@ export function Services() {
         "Yedek parça temini",
         "Ön kontrol ve arıza tespiti",
       ],
-      image: "/assets/images/beyazesya.webp",
+      image: "/assets/beyazesya.webp",
       gradient: "from-indigo-500 to-purple-500",
     },
   ];
